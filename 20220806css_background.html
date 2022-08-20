@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>배경이미지</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+
+            div{
+                    width: 100%;
+                    height: 100px;
+                    font-size:20px;
+                    text-align:center;
+                    line-height:100px;
+                }
+            
+            #word {background-color: royalblue;}
+            #hex{background-color: #00ff00;}
+            #rgb{background-color: rgb(130, 189, 238);} /*0~255*/
+            #opacity{background-color: rgb(33, 122, 196);
+                opacity: 80%;} /*0~255*/
+            #rgba{background-color: rgba(187, 125, 125, 0.151);} 
+            #hsl{background-color: hsl(0 , 30%, 30%);}
+            #hsla{background-color: hsla(1,10%, 10%, 0.5);}
+                
+            p{
+                width:300px;
+                height:300px;
+                /* background-color: rgb(164, 193, 255); */
+                text-align: center;
+                line-height: 300px;
+                margin: 30px;
+                box-shadow: 5px 5px 10px rgb(126, 110, 97);
+                font-size: 30px;
+                font-weight: 500;
+                color:#fff;
+                text-shadow: 5px 3px 3px rgb(126, 110, 97);
+                background: rgb(34,193,195);
+                background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+            }
+
+            body{
+                background-color: antiquewhite;
+
+            }
+                /* background-image:url(img/cat_bg.png), url(img/land.png);
+                /*배경이미지 업로드하는 설정*/
+                /* background-repeat:no-repeat;
+                /*repeat-x , repeat-y 가로세로 반복*/
+                /* background-size: cover; */
+                /* background-position: 0%; */ 
+
+                
+             
+        </style>
+    </head>
+    <body>
+        <div id="word">단어 : 단어로 입력하는 방식</div>
+        <div id="hex">컬러 코드 :#웹번호로 입력하는 방식</div>
+        <div id="opacity">컬러 코드2 :#웹번호로 입력하는 방식, 투명도 추가</div>
+        <div id="rgb">rgb : red, green, blue의 숫자값을 입력하는 방식</div>
+        <div id="rgba">rgba: rgb표현방식에 a(alpha)값이 추가된 방식</div>
+        <div id="hsl">hsl : hue, saturation, lightness </div>
+        <div id="hsla">hsla : hue, saturation, lightness, alpha </div>
+        <p>
+            box
+        </p>
+
+    </body>
+</html>
