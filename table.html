@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>table</title>
+        <style>
+            *{
+                padding: 0;
+                margin:0;
+            }
+
+            table{
+                border-top: 2px solid #fcabab;
+                /*border:2px solid #000;*/
+                margin:20px;
+                border-collapse: collapse;
+                /*선 사이에 병합이 collapse*/
+                border-spacing: 20px 40px;
+                empty-cells: hide;
+                /*빈 셀이 안 보이게 하고 싶다면 hide/보이게 한다면 show*/
+            }
+
+            td, th{
+                border:1px solid #ccc;
+                width:120px;
+                height: 20px;
+                text-align: center;
+                vertical-align: middle;
+                /*td top-middle-bottom*/
+            }
+
+            th{
+                background-color: #ffcbcb;
+            }
+
+            .bl_n{
+                border-left: none;
+            }
+
+            .br_n{
+                border-right:none;
+            }
+
+        </style>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h1>표 관련 태그</h1>
+
+       <table>
+        <caption>table caption - looks like title</caption>
+        <tr>
+            <th> table padding</th> <!--기본이 text align- center/bold-->
+            <td class="bl_n">table1</td>
+            <td class="br_n">table2</td>
+            <td>table3</td>
+        </tr>
+        <tr>
+            <th> table padding</th>
+            <td>table1-1</td>
+            <td>table2-1</td>
+            <td>table3-1</td>
+        </tr>
+        <tr>
+            <th> table padding</th>
+            <td>table1-2</td>
+            <td>table2-2</td>
+            <td>table3-2</td>
+        </tr>
+       </table>
+       <br/><br/>
+
+       <table>
+        <caption>another table- 병합 연습</caption>
+        <!--colspan : 가로 셀 병합 // rowspan : 세로 셀 병합-->
+        <tr>
+            <td colspan="3">01</td>
+            <!-- <td>02</td>
+            <td>03</td> -->
+            <td rowspan="3">04</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>06</td>
+            <td>07</td>
+            
+        </tr>
+        <tr>
+            <td>09</td>
+            <td>10</td>
+            <td>11</td>
+            
+        </tr>
+       </table>
+
+       <br/><br/>
+       <table>
+        <caption>머리몸통다리</caption>
+        <thead>
+            <tr>
+                <td>table머리</td>
+                <td>table머리</td>
+                <td>table머리</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>table내용</td>
+                <td>table내용</td>
+                <td>table내용</td>
+            </tr>
+            <tr>
+                <td>table내용</td>
+                <td>table내용</td>
+                <td>table내용</td>
+            </tr>
+            <tr>
+                <td>table내용</td>
+                <td>table내용</td>
+                <td>table내용</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>table하단</td>
+                <td>table하단</td>
+                <td>table하단</td>
+            </tr>
+        </tfoot>
+       
+        
+       </table>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
