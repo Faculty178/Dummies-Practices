@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>webfont pracitce</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+San&display=swap" rel="stylesheet">
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            body{
+                font-size: 14px;
+                font-family:"DynaPuff-VariableFont_wdth","serif";
+            }
+            .test1{
+                font-family:"DynaPuff-VariableFont_wdth","serif";
+            }
+            p{margin:40px 0px;}
+
+            .test2{
+                font-family: 'Black Han Sans', sans-serif;
+            }
+
+            @font-face{
+                font-family: 'Courier New', Courier, monospace;
+                font-style: normal;
+                font-weight: 500;
+                src:url(font/DynaPuff-VariableFont_wdth,wght.ttf)
+                
+            }
+        </style>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>웹폰트</h1>
+        <p class="test1">
+            webfont - 링크, 도메인, 브라우저와 상관없이 웹페이지내에서 폰트가 연결되어지는 것<br/>내 컴퓨터 내에 설치된 폰트를 주로 이용함 <br/>
+        </p>
+      
+
+        <p class="test2">
+            webfont-cdn : 웹에서 폰트를 긁어다 와서 전달하는 방법
+            <br/>다만 출처가 되는 웹페이지가 느려지거나 터질 경우 폰트가 나타나지 않는 경우가 생길 수 있으니 주의 할 것
+        </p>
+
+        <p class="test3">
+            @font-face
+            :폰트 파일을 다운받거나 가져와 문서와 직접 연결하여 폰트를 선언하는 방식<br/>
+            오류가 적고 적용이 빠름<br/>
+            폰트를 직접 구해와야 한다는 점이 번거로움<br/>
+            EOT : IE8 이하<br/>
+            TTF : 가장 흔히 쓰이는 압축을 푸는 형태로 사용<br/>
+            WOFF : 대부분의 브라우저에서 지원<br/>
+            WOFF2 : WOFF보다 압축률이 좋음<br/>
+
+        </p>
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>

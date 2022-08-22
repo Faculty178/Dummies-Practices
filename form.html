@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>입력 양식</title>
+        <style>
+            input[type="text"]{
+                background-color: beige;
+                border:3px solid #000;
+            }
+        </style>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        <form name="">
+
+            <fieldset>개인정보 작성 <br/>
+            <label>id</label>
+            <input type="text" name="id"/><br/>
+            <label>password</label>
+            <input type="password" name="pw"/><br/>
+            </fieldset>
+
+            <br/>
+            <label>phone number</label>
+            <input type="tel" placeholder="010-0000-0000" name="tel"/><br/>
+                <!--placeholder는 미리보기 형식-->
+
+            <label>checkbox</label>
+            <input type="checkbox" name="ch"/><br/>
+
+            <label>radiobutton</label>
+            <input type="radio" name="r"/><br/>
+
+            <label>submit/ cancel</label>
+            <input type="submit" value="확인하기" name="btn"/>
+            <input type="reset" value="취소하기" name="btn"/><br/>
+
+            <label>button</label>
+            <button type="button">버튼</button><br/><br/>
+            
+            <label>선택박스</label><br/>
+            <select>
+                <option>항목</option>
+                <option>항목</option>
+                <option>항목</option>
+                <option>항목</option>
+                <option>항목</option>
+            </select><br/><br/>
+
+            <textarea>
+                아주많은 텍스트를 넣고싶다면 이렇게 합니다 
+            </textarea>
+
+            
+
+
+            
+
+
+        </form>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
