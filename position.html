@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Position</title>
+        <style>
+            *{
+                padding:0;
+                margin:0;
+            }
+
+            .p1{
+                width: 300px;
+                height: 300px;
+                background-color: aquamarine;
+                text-align: center;
+                line-height: 300px;
+                font-size: 30px;
+                position: relative;
+                /*position:위치지정에 사용하는 속성, left, right, top bottom, etx
+                static은 위치 영향을 받지 않는 기본값 
+                relative - 상대위치 (박스의 나열 순서대로 위치가 지정됨)
+                absolute - 고정 위치 (화면 위치에서 고정)
+                fixed - 고정 위치 (메뉴나 배너 제작에 주로 이용)*/
+            }
+            body{
+                background-color: rgb(rgb(224, 251, 255));
+            }
+
+            .pbox{
+                width:200px;
+                height: 200px;
+                background-color: rgb(217, 255, 127);
+                text-align: center;
+                line-height: 200px;
+                position:absolute;
+                top: 30px;
+                left: 30px;
+            }
+            .pbox:nth-child(1){
+                z-index: 3; /*우선순위 표시 코드*/
+            }
+            .pbox:nth-child(2){
+                background-color: azure;
+                position:absolute;
+                top: 60px;
+                left: 60px;
+            }
+            .pbox:nth-child(3){
+                background-color: rgb(43, 226, 141);
+                position:absolute;
+                top: 90px;
+                left: 90px;
+            }
+
+            #position{
+                width: 400px;
+                height: 200px;
+                background-color: #bcbc2c;
+                position: relative;
+            }
+
+            .menu{
+                width: 100%;
+                height: 200px;
+                text-align: center;
+                background-color: bisque;
+            }
+
+        </style>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h1>position</h1>
+       <p>:요소를 특정한 위치로 지정하여 배치하는 속성 / 어떻게 위치할지 결정하는 속성</p>
+        
+
+       <!-- <div class="p1">
+        position</div> -->
+
+        <div class="menu">
+            
+        </div>
+
+        <div id="position">
+            <div class="pbox">box1</div>
+            <div class="pbox">box2</div>
+            <div class="pbox">box3</div>
+        </div>
+       
+
+        <script src="" async defer></script>
+    </body>
+</html>
