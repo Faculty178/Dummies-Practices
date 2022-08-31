@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>animation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+
+            *{
+                padding:0;
+                margin:0;
+            }
+
+            body{
+                background-color: rgb(224, 235, 255);
+            }
+
+            /*1. 애니메이션 이름 부여하기(animation-name)
+            2. 애니메이션 지속 시간 부여하기 (animation-duration)  */
+
+            .ani{
+                width:100px;
+                height: 100px;
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50px, -50px);
+                background-color: rgb(46, 137, 255);
+
+                animation-name: test;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+                animation-delay: 1s;
+
+                animation-timing-function: ease-in-out;
+            }
+
+            .ani:hover{
+                animation-play-state: paused;
+            }
+
+            /* 0%, from : 시작점 
+            100%, to : 끝점 . 퍼센트로 중간 구간도 표현가능 */
+
+            @keyframes test{
+                0%{
+                    border-radius: 10px;
+                    background-color: blue;
+                }
+
+                20%{
+                    border-radius: 50px 0 0 0;
+                    background-color: rgb(89, 0, 255);
+                }
+
+                40%{
+                    border-radius: 0 50px 0 0;
+                    background-color: rgb(183, 0, 255);
+                }
+
+                60%{
+                    border-radius: 0 0 50px 0;
+                    background-color: rgb(255, 0, 212);
+                }
+
+                80%{
+                    border-radius: 0 0 0 50px;
+                    background-color: rgb(255, 0, 212);
+                }
+
+                100%{
+                    border-radius : 100px;
+                    background-color: rgb(247, 49, 115);
+                }
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class ="ani"></div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

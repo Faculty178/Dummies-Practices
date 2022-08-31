@@ -1,0 +1,62 @@
+<?
+/*접속기기를 인식하는 스크립트*/
+if(!function_exists("is_moblile"))
+{
+  function is_moblile()
+  {
+    $connet_m = $_SERVER['HTTP_USER_AGENT'];
+    if(strpos( $connet_m,  "iPhone", 0) > -1)
+    {
+      return "아이폰";
+    }  
+
+    if(strpos( $connet_m,  "Android", 0) > -1)
+    {
+      return "안드로이드";
+    }      
+    return 0;
+  }  
+} 
+
+/*pc폴더로 갈지 mobile폴더로 갈지의 조건문 형태*/
+if($PC_MODE == 'true') $_SESSION['PC_MODE'] = "true";
+
+if(is_moblile() && $_SESSION['PC_MODE'] != "true")
+{
+/*모바일폴더로 간다면 모바일 폴더의 페이지주소입력*/
+  header("location:http://ddh05130.dothome.co.kr/mobile.html");
+}
+
+?>
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PC</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            *{padding:0; margin:0;}
+            body{
+                background-color: tomato;
+                color:#fff;
+            }
+            h1{
+                padding-top: 100px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>PC 접속 화면입니다 <br/> 
+        모바일 기기 접속 시 화면 전환 되어집니다</h1>
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>
