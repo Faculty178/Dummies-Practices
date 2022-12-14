@@ -1,0 +1,10 @@
+Student's scores and average scores for Game 1, 2, 3 
+
+Number Game1 Game2 Game3 Average_score 
+1  2  3  4   5.00 
+6  7  93  97  65.00 
+97  85  63  71  82.00 
+99  99  66  98  91.00 
+79  90  67  80  68.00 
+84  77  83  8.833333e+01  87.67 
+8.133333e+01  77  89  77  77.67 
